@@ -32,6 +32,23 @@ header {
     display: inline;
 }
 
+/* Establecer el tamaño mínimo de la pantalla para que el pie de página se ajuste */
+html,
+body {
+    height: 100%;
+}
+
+/* Hacer que el cuerpo se comporte como un flex container */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Establecer el contenido principal para que pueda hacer scroll si es necesario */
+main {
+    flex-grow: 1;
+}
+
 footer {
     background-color: #1A6FAC;
     color: #fff;
