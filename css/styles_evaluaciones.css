@@ -9,12 +9,13 @@ h2 {
 }
 
 /*Pequeño texto debajo del subtítulo*/
-.texto { 
+.texto {
     font-size: 40px;
     font-weight: 400;
 }
 
-h2, .texto {
+h2,
+.texto {
     text-align: center;
     color: #274B92;
 }
@@ -22,7 +23,8 @@ h2, .texto {
 /*CARDS*/
 .contenedor {
     display: flex;
-    justify-content: center; /*CENTRAR LAS 4 CARDS*/
+    justify-content: center;
+    /*CENTRAR LAS 4 CARDS*/
 }
 
 .card {
@@ -58,7 +60,7 @@ ul {
     padding: 0;
 }
 
-ul li {
+main ul li {
     font-size: 20px;
     text-align: left;
 }
@@ -67,11 +69,11 @@ ul li {
 .ctn-btn-evalu {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     height: 10vh;
 }
 
-.btn-evalu { 
+.btn-evalu {
     width: 129px;
     height: 56px;
     background-color: #1A6FAC;
