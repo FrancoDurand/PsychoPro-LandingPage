@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #274B92;
+    font-weight: 800;
+    font-size: 85px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas de igual ancho */
+    grid-template-rows: repeat(2, auto);
+    /* 2 filas con altura automática */
+    gap: 10px;
+    /* Espacio entre las cajas */
+    align-items: center;
+    /* Centra verticalmente los elementos en cada fila */
+    justify-content: center;
+    /* Centra horizontalmente los elementos */
+    margin-left: 230px;
+}
+
+/* Estilo para el cuadro que contiene el texto */
+.texto {
+    width: 590px;
+    height: 270px;
+    border: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+/* Estilo para los cuadros que contienen el texto */
+.uno {
+    background-color: #274B92;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.dos {
+    background-color: #1A6FAC;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+/*Imagenes */
+.contenedor img {
+    display: grid;
+    place-content: center;
+    border-radius: 20px;
+}
