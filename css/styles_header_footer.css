@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 10px 0 10px 0;
+    background-color: #1A6FAC;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+#links-header {
+    display: flex;
+    align-items: center;
+}
+
+#links-header a {
+    margin-right: 5px;
+    transition: all 0.4s linear;
+    background-color: #1A6FAC;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#links-header li {
+    list-style: none;
+    display: inline;
+}
+
+#links-header ul {
+    display: flex;
+}
+
+.division-header {
+    width: 2px;
+    margin-right: 5px;
+    background-color: #FFF;
+}
+
+#links-header a:hover {
+    transition: all 0.4s linear;
+    background: #1D95C8;
+}
+
+/* Establecer el tamaño mínimo de la pantalla para que el pie de página se ajuste */
+html,
+body {
+    height: 100%;
+}
+
+/* Hacer que el cuerpo se comporte como un flex container */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Establecer el contenido principal para que pueda hacer scroll si es necesario */
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #1A6FAC;
+    color: #fff;
+    padding: 7.5px 0 7.5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#redes img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+#redes {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 25%;
+}
+
+#ig {
+    margin-right: 15px;
+}
+
+#redes img:hover {
+    animation-name: img-hover;
+    animation-duration: 0.85s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes img-hover {
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+#tiktok {
+    margin-right: 10px;
+}
+
+#fb {
+    margin-right: 10px;
+}
+
+#privacidad-terminos {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+#privacidad-terminos a {
+    display: flex;
+    width: 120px;
+}
+
+#logo {
+    margin: 0 0 0 35.5px;
+}
+
+#privacidad {
+    border-right: 2.5px solid #FFF;
+}
