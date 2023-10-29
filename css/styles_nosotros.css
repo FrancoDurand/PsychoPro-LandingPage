@@ -5,52 +5,64 @@ body {
 h2 {
     text-align: center;
     color: #274B92;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 85px;
+    margin: 15px;
 }
 
-.contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 columnas de igual ancho */
-    grid-template-rows: repeat(2, auto);
-    /* 2 filas con altura automática */
-    gap: 10px;
-    /* Espacio entre las cajas */
-    align-items: center;
-    /* Centra verticalmente los elementos en cada fila */
+
+.first_section {
+    display: flex;
+    flex-direction: row; 
     justify-content: center;
-    /* Centra horizontalmente los elementos */
-    margin-left: 230px;
+    margin-bottom: 50px;
+}
+
+.second_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image_nosotros
+{
+    width:590px;
+    height:270px;
+    object-fit: cover;
+    border-radius:5px;
+    margin-right: 20px;
+    margin: 0px 50px;
 }
 
 /* Estilo para el cuadro que contiene el texto */
 .texto {
     width: 590px;
     height: 270px;
-    border: 5px;
-    text-align: center;
     border-radius: 10px;
     font-size: 25px;
-    padding: 0 20px;
+    font-weight: 300;
+    /*Centrar texto verticalmente*/
+    display:flex;
+    align-items: center;
+    margin: 0px 50px;
 }
 
 /* Estilo para los cuadros que contienen el texto */
-.uno {
-    background-color: #274B92;
-    color: #fff;
-    margin-top: 50px;
-}
 
-.dos {
+.texto_uno {
     background-color: #1A6FAC;
     color: #fff;
-    margin-bottom: 50px;
+    text-align: center;
 }
 
-/*Imagenes */
-.contenedor img {
-    display: grid;
-    place-content: center;
-    border-radius: 20px;
+.texto_dos {
+    background-color: #274B92;
+    color: #fff;
+    text-align: center;
 }
+
+p
+{
+    margin: 0px;
+}
+
