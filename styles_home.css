@@ -79,28 +79,26 @@ h2 a {
 
 #img1 {
     position: relative;
-    top: -500px;
+    top: -800px;
     left: 100px;
-    margin-top: -219px;
 }
 
 #img2 {
     position: relative;
-    left: -273px;
-    margin-top: -383px;
+    /* top: 90%;
+    left: 0%; */
 }
 
 #img3 {
     width: 248.536px;
     height: 220px;
-    position: relative;
-    top: -460px;
-    right: -50%;
-    margin-top: -248.536px;
+    /*  position: absolute; */
+    /* top: 45%;
+    right: 0%; */
 }
 
 #img4 {
-    position: relative;
-    right: -688px;
-    margin-top: -369px;
+    /*  position: absolute; */
+    /*  top: 90%;
+    right: 0%; */
 }
