@@ -6,33 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/styles_contacto.css">
+    <link rel="stylesheet" href="../css/styles_header_footer.css">
 </head>
 
 <body>
-    <h2>CONTACTO</h2>
+    <header>
+        <img id="logo" src="../images/logo.svg" alt="logo">
+        <div id="links-header">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <div class="division-header"></div>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <div class="division-header"></div>
+                <li>
+                    <a href="membresias.html">Membresías</a>
+                </li>
+                <div class="division-header"></div>
+                <li>
+                    <a href="evaluaciones.html">Evaluaciones</a>
+                </li>
+                <div class="division-header"></div>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2>CONTACTO</h2>
 
-    <div class="contactoFormulario">
-        <form>
-            <label for="formNombre">Nombre completo: </label><br>
-            <input type="text" id="formNombre" required><br>
-            <label for="formCorreo">Correo electrónico: </label><br>
-            <input type="text" id="formCorreo" required><br>
-            <label for="formAsunto">Asunto: </label><br>
-            <input type="text" id="formAsunto" required><br>
-            <label for="formMensaje">Mensaje: </label><br>
-            <input type="text" id="formMensaje" required><br>
-            <div class="botonForm">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
+        <div class="contactoFormulario">
+            <form>
+                <label for="formNombre">Nombre completo: </label><br>
+                <input type="text" id="formNombre" placeholder="Ingresa tu nombre"><br>
+                <label for="formCorreo">Correo electrónico: </label><br>
+                <input type="text" id="formCorreo" placeholder="Ingresa tu correo" required><br>
+                <label for="formAsunto">Asunto: </label><br>
+                <input type="text" id="formAsunto" placeholder="Ingresa el asunto" required><br>
+                <label for="formMensaje">Mensaje: </label><br>
+                <textarea id="formMensaje" cols="70" rows="9" placeholder="Introduce tu mensaje"
+                required></textarea>
+                <div class="botonForm">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
 
-        <img class="formImagen"
-            src="https://gestion.pe/resizer/NI2UEEFuiObaIF7SV3YGUV-n8-o=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/VI6BXCYGY5FGJF2JLFZ5DX322E.jpg"
-            alt="Imagen de Servicio al Cliente" />
-    </div>
-
-
-
+            <img class="formImagen"
+                src="https://gestion.pe/resizer/NI2UEEFuiObaIF7SV3YGUV-n8-o=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/VI6BXCYGY5FGJF2JLFZ5DX322E.jpg"
+                alt="Imagen de Servicio al Cliente" />
+        </div>
+    </main>
 </body>
+<footer>
+    <div id="redes">
+        <a href="">
+            <img id="ig" src="../images/instagram.png" alt="Instagram">
+        </a>
+        <a href="">
+            <img id="tiktok" src="../images/tik-tok.png" alt="TikTok">
+        </a>
+        <a href="">
+            <img id="fb" src="../images/facebook.png" alt="Facebook">
+        </a>
+        <a href="">
+            <img id="twitter" src="../images/twitter.png" alt="Twitter">
+        </a>
+    </div>
+    <div id="privacidad-terminos">
+        <a href="" id="privacidad">AVISO DE PRIVACIDAD</a>
+        <a href="">TERMINOS Y CONDICIONES</a>
+    </div>
+</footer>
 
 </html>
