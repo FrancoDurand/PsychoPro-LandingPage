@@ -134,3 +134,76 @@ main ul {
 .cuadro li {
     margin: 25px 0 25px 0;
 }
+
+/* Adjustments for smaller screens */
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .membresias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        font-size: 15px;
+        gap: 30px;
+    }
+
+    .cuadro {
+        width: 30%;
+        max-width: 1000px;
+        margin-bottom: 15px;
+        text-align: center;
+        height: 370px;
+        margin-left: 5px;
+    }
+
+    .titulo{
+        font-size: 60px;
+    }
+
+
+    .subtitulo{
+        font-size: 24px;
+    }
+
+    .cuadro-interno{
+        font-size: 15px;
+        width: 55px;
+        height: 70px;
+    }
+
+    .cuadro .cabecera_cuadro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+
+    .cuadro .cabecera_cuadro .star,
+    .cuadro .cabecera_cuadro .star1 {
+        font-size: 60px;
+    }
+
+    .precio {
+        font-size: 10px;
+        margin: 0px;
+        text-align: left;
+    }
+
+    .cuadro ul {
+        padding-left: 0;
+        text-align: left;
+        font-size: 10px;
+    }
+
+    .cuadro ul li {
+        margin-bottom: 5px;
+        font-size: 10px;
+        margin-left: 0px;
+    }
+
+    .boton-azul {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+}
