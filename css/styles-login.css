@@ -14,7 +14,7 @@ main {
 }
 
 #registro-form {
-    width: 960px;
+    width: 65%;
     height: 740px;
     border-radius: 10px;
     display: flex;
@@ -24,6 +24,7 @@ main {
     animation-duration: 1.25s;
     position: relative;
     animation-timing-function: ease-out;
+    justify-content: center;
 }
 
 @keyframes aparecer {
@@ -38,7 +39,7 @@ main {
     }
 }
 
-#div-img {
+/* #div-img {
     width: 50%;
     height: 100%;
     display: flex;
@@ -55,27 +56,29 @@ main {
     width: 100%;
     height: 75%;
     border-radius: 10px 0 0 10px;
-}
+    object-fit: cover;
+} */
 
 form {
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 form h2 {
-    margin: 90px 0 30px 0;
+    margin: 90px 0px 30px 0px;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: bold;
+    text-align: center;
 }
 
 form input {
     border-radius: 5px;
-    width: 325px;
-    height: 50px;
+    width: 70%;
+    /* height: 50px; */
     margin: 15px 0;
-    padding: 0 20px;
+    padding: 25px 20px;
     border: 1px solid #ccc;
     font-size: 16px;
 }
@@ -100,10 +103,11 @@ form input:focus {
 
 #botones {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     width: 76%;
     margin: 15px 0;
+    gap: 30px;
 }
 
 
