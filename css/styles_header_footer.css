@@ -6,48 +6,57 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    padding: 10px 0 10px 0;
+.header {
     background-color: #1A6FAC;
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
     display: flex;
-    justify-content: space-between;
-    padding-right: 15px;
-}
-
-#links-header {
-    display: flex;
+    justify-content: flex-end;
     align-items: center;
+    padding: 10px 10%;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 28px;
 }
 
-#links-header a {
-    margin-right: 5px;
-    transition: all 0.4s linear;
-    background-color: #1A6FAC;
-    padding: 5px;
-    border-radius: 5px;
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
 }
 
-#links-header li {
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.1);
+}
+
+.header nav .links-header {
     list-style: none;
-    display: inline;
 }
 
-#links-header ul {
-    display: flex;
+.header nav .links-header li {
+    display: inline-block;
+    padding: 10px 20px;
+    border-right: 3.5px solid #FFF;
 }
 
-.division-header {
-    width: 2px;
-    margin-right: 5px;
-    background-color: #FFF;
+.header nav .links-header li:nth-child(5) {
+    border-right: none;
 }
 
-#links-header a:hover {
+
+.header nav .links-header li:hover {
+    transform: scale(1.1);
+}
+
+.header nav .links-header a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.header nav .links-header a:hover {
     transition: all 0.4s linear;
     background: #1D95C8;
 }
@@ -72,9 +81,11 @@ main {
 footer {
     background-color: #1A6FAC;
     color: #fff;
-    padding: 7.5px 0 7.5px 0;
+    padding: 7.5px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 75%;
 }
 
 a {
@@ -91,8 +102,8 @@ a {
 #redes {
     display: flex;
     align-items: center;
-    margin-left: 30px;
-    margin-right: 25%;
+    /* margin-left: 30px; */
+    /* margin-right: 50%; */
 }
 
 #ig {
