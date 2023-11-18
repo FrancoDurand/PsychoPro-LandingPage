@@ -65,7 +65,7 @@ label {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
+    flex-shrink: 0;
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.50);
 }
@@ -118,4 +118,43 @@ input[type="submit"] {
     object-fit: cover;
     /*Corta en vez de redimensonar*/
     margin-left: 100px;
+}
+
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 55px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    #formNombre,
+    #formCorreo,
+    #formAsunto {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    #formMensaje {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        font-size: 18px;
+    }
+
+    .formImagen {
+        width: 30%;
+        max-width: 300px;
+        height: 600;
+        margin-left: 0;
+        margin-top: 5px;
+    }
 }

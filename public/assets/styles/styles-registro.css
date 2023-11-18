@@ -11,11 +11,13 @@ main {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    min-height: 800px;
 }
 
 #registro-form {
-    width: 960px;
-    height: 740px;
+    width: 70%;
+    /* height: 500px; */
+    background-color: #fff;
     border-radius: 10px;
     display: flex;
     border: 1.5px solid #ddd;
@@ -24,6 +26,8 @@ main {
     animation-duration: 1.25s;
     position: relative;
     animation-timing-function: ease-out;
+    justify-content: center;
+    padding-bottom: 1%;
 }
 
 @keyframes aparecer {
@@ -38,7 +42,7 @@ main {
     }
 }
 
-#div-img {
+/* #div-img {
     width: 50%;
     height: 100%;
     display: flex;
@@ -55,27 +59,28 @@ main {
     width: 100%;
     height: 75%;
     border-radius: 10px 0 0 10px;
-}
+} */
 
 form {
-    width: 50%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 form h2 {
-    margin: 90px 0 10px -35%;
+    margin: 90px 0px 30px 0px;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: bold;
+    text-align: center;
 }
 
 form input {
     border-radius: 5px;
-    width: 325px;
-    height: 50px;
-    margin: 15px 0;
-    padding: 0 20px;
+    width: 60%;
+    /* height: 50px; */
+    margin: 5px 0;
+    padding: 25px 20px;
     border: 1px solid #ccc;
     font-size: 16px;
 }
@@ -86,7 +91,8 @@ form input:focus {
 }
 
 #botones button {
-    width: 50%;
+    width: 40%;
+    min-width: 180px;
     height: 50px;
     margin: 15px 0;
     border-radius: 5px;
@@ -100,10 +106,11 @@ form input:focus {
 
 #botones {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    width: 76%;
+    width: 100%;
     margin: 15px 0;
+    gap: 30px;
 }
 
 
@@ -112,6 +119,6 @@ form input:focus {
     color: #888;
     font-size: 20px;
     font-weight: 350;
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
 }

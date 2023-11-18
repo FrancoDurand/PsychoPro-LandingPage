@@ -11,45 +11,39 @@
         rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/styles_nosotros.css">
     <link rel="stylesheet" href="assets/styles/styles_header_footer.css">
+    <script src="https://kit.fontawesome.com/829f2fe815.js" crossorigin="anonymous"></script>
     <title>Nosotros</title>
 </head>
 
 <body>
-    <header>
-        <img id="logo" src="assets/images/logo.svg" alt="logo">
-        <div id="links-header">
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <div class="division-header"></div>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <div class="division-header"></div>
-                <li>
-                    <a href="membresias.html">Membresías</a>
-                </li>
-                <div class="division-header"></div>
-                <li>
-                    <a href="evaluaciones.html">Evaluaciones</a>
-                </li>
-                <div class="division-header"></div>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo"><img src="assets/images/logo.svg" alt=""></div>
+            <ul class="links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href=" nosotros.html">Nosotros</a></li>
+                <li><a href="membresias.html">Membresías</a></li>
+                <li><a href="evaluaciones.html">Evaluaciones</a></li>
             </ul>
+            <a href="contacto.html" class="action_btn">Contacto</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="membresias.html">Membresías</a></li>
+            <li><a href="evaluaciones.html">Evaluaciones</a></li>
+            <li><a href="contacto.html" class="action_btn">Contacto</a></li>
         </div>
     </header>
+
     <main>
-
-
-        <h2 class="subtitle">NOSOTROS</h2>
-
+        <h2 class="subtitle-us">NOSOTROS</h2>
         <div class="contenedor">
             <section class="first_section">
                 <img class="image_nosotros" src="assets/images/imagen1.jpg" alt="Imagen mision">
-
                 <div class="texto texto_uno">
                     <p>Psycho-Mind se dedica a transformar el ámbito de la salud mental mediante tecnología avanzada.
                         Nos
@@ -74,27 +68,37 @@
                 <img class="image_nosotros" src="assets/images/imagen2.jpg" alt="Imagen vision">
             </section>
         </div>
+        <div class="video-container">
+            <iframe width="1903" height="758" src="https://www.youtube.com/embed/Gzyk1BoTMxA" title="Video About-Us"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
     </main>
 </body>
-<footer>
+<footer class="footer">
     <div id="redes">
-        <a href="">
-            <img id="ig" src="assets/images/instagram.png" alt="Instagram">
+        <a href="#">
+            <img id="ig" src="assets/images/instagram.png" width="30px" alt="Instagram">
         </a>
-        <a href="">
-            <img id="tiktok" src="assets/images/tik-tok.png" alt="TikTok">
+        <a href="#">
+            <img id="tiktok" src="assets/images/tik-tok.png" width="30px" alt="TikTok">
         </a>
-        <a href="">
-            <img id="fb" src="assets/images/facebook.png" alt="Facebook">
+        <a href="#">
+            <img id="fb" src="assets/images/facebook.png" width="30px" alt="Facebook">
         </a>
-        <a href="">
-            <img id="twitter" src="assets/images/twitter.png" alt="Twitter">
+        <a href="#">
+            <img id="twitter" src="assets/images/twitter.png" width="30px" alt="Twitter">
         </a>
     </div>
     <div id="privacidad-terminos">
-        <a href="" id="privacidad">AVISO DE PRIVACIDAD</a>
-        <a href="">TERMINOS Y CONDICIONES</a>
+        <a href="#" id="privacidad">AVISO DE PRIVACIDAD</a>
+        <a href="#">TERMINOS Y CONDICIONES</a>
     </div>
 </footer>
+
+<!--JAVASCRIPT-->
+<script src="assets/javascript/header.js"></script>
 
 </html>
