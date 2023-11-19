@@ -126,6 +126,24 @@ h2 a {
     animation-timing-function: linear;
 }
 
+.descargas h2 {
+    color: #1281b7;
+    font-weight: 520;
+}
+
+.descargas-img {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.descargas-img img {
+    width: 35%;
+    object-fit: contain;
+}
+
 @keyframes aparecer {
     0% {
         opacity: 0;

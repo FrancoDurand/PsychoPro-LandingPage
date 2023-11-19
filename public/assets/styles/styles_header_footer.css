@@ -8,10 +8,6 @@
     font-size: 20px;
 }
 
-body {
-    height: 100vh;
-}
-
 /*HEADER NAVBAR*/
 .header {
     position: relative;
@@ -149,21 +145,13 @@ a {
 
 }
 
-/* Establecer el tamaño mínimo de la pantalla para que el pie de página se ajuste */
-html,
 body {
-    height: 100%;
-}
-
-/* Hacer que el cuerpo se comporte como un flex container */
-body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-image: radial-gradient(circle, #fff, #c2dff5);
-
 }
 
-/* Establecer el contenido principal para que pueda hacer scroll si es necesario */
 main {
     flex-grow: 1;
 }

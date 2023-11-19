@@ -29,7 +29,7 @@ label {
 }
 
 #formNombre {
-    width: 684px;
+    width: 720px;
     height: 40px;
     flex-shrink: 0;
 
@@ -39,7 +39,7 @@ label {
 }
 
 #formCorreo {
-    width: 684px;
+    width: 720px;
     height: 40px;
     flex-shrink: 0;
 
@@ -49,25 +49,21 @@ label {
 }
 
 #formAsunto {
-    width: 684px;
+    width: 720px;
     height: 40px;
     flex-shrink: 0;
-
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.50);
     background: #FFF;
 }
 
-#formMensaje {
-    color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+#formAMensaje {
+    width: 720px;
+    height: 40px;
     flex-shrink: 0;
-    border-radius: 2px;
+    border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.50);
+    background: #FFF;
 }
 
 input[type="text"] {
@@ -111,32 +107,37 @@ input[type="submit"] {
 }
 
 .formImagen {
-    width: 393px;
-    height: 568px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    object-fit: cover;
-    /*Corta en vez de redimensonar*/
-    margin-left: 100px;
+
+    width: 80%; /* Ajusta el ancho máximo de la imagen según sea necesario */
+    max-width: 600px; /* Establece un límite máximo para el ancho de la imagen */
+    height: auto; /* Para mantener la proporción de la imagen al cambiar el ancho */
+    display: block;
+    margin: 20px auto; /* Esto centra la imagen horizontalmente con márgenes superior e inferior de 20px */
+    
+
 }
 
 
 
 /* Adjustments for smaller screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 750px) {
     h2 {
-        font-size: 55px;
+        font-size: 70px;
     }
 
     label {
         font-size: 20px;
     }
+    
+    .contactoFormulario{
+        margin-left: 15px;
+    }
 
     #formNombre,
     #formCorreo,
     #formAsunto {
-        width: 100%;
-        max-width: 300px;
+        width: 90%;
+        max-width: 100%;
         margin-bottom: 15px;
     }
 
@@ -150,11 +151,16 @@ input[type="submit"] {
         font-size: 18px;
     }
 
-    .formImagen {
-        width: 30%;
-        max-width: 300px;
-        height: 600;
-        margin-left: 0;
-        margin-top: 5px;
+}
+
+@media only screen and (max-width: 400px)
+{
+    h2{
+        font-size: 60px;
+    }
+
+    input[type="submit"]{
+        width: 200px;
+        height: 50px;
     }
 }
